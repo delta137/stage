@@ -1,0 +1,8 @@
+xl,xr,n = 0,10,500 #bornes et nombre de pts d'integration
+
+premier guess: y'=0.5
+deuxieme: y'=exact +1e-5
+cible: y(2) = 1 (exact infini)
+
+morale: plus de points d'intégrations sont inutiles... 
+faudrait une grille adaptative, comme dirait Marie-Lou

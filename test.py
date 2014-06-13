@@ -1,0 +1,22 @@
+def plotmoica(nom):
+    """plot fest is on"""
+    data=numpy.loadtxt(fname=nom,delimiter=',')
+    mean=data.mean(axis=0)
+    mx=data.max(axis=0)
+    mn=data.min(axis=0)
+    st=data.std(axis=0)
+    #pyplot.plot(mean)
+    pyplot.subplot(1,4,1)
+    pyplot.plot(mean,"r--")
+    pyplot.subplot(1,4,2)
+    pyplot.ylabel("Mean")
+    pyplot.plot(mn,"go")
+    pyplot.ylabel("Min")
+    pyplot.subplot(1,4,3)
+    pyplot.plot(mx,"b-")
+    pyplot.ylabel("Max")
+    pyplot.subplot(1,4,4)
+    pyplot.plot(st,"kx")
+    pyplot.ylabel("Std")
+    #pyplot.plot(mx)
+    return
