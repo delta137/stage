@@ -2,11 +2,11 @@
 \select@language {french}
 \beamer@sectionintoc {2}{Cosmologie}{3}{0}{1}
 \beamer@subsectionintoc {2}{1}{Cosmologie 101}{3}{0}{1}
-\beamer@subsectionintoc {2}{2}{Sym\IeC {\'e}trie des groupes de Lie}{4}{0}{1}
-\beamer@subsectionintoc {2}{3}{Sym\IeC {\'e}trie et cosmologie}{6}{0}{1}
-\beamer@sectionintoc {3}{Solitons - Appareillage math\IeC {\'e}matique }{9}{0}{2}
-\beamer@subsectionintoc {3}{1}{\IeC {\'E}quation d'ondes et soliton}{9}{0}{2}
-\beamer@subsectionintoc {3}{2}{Formalisme Lagrangien}{13}{0}{2}
-\beamer@subsectionintoc {3}{3}{Kink}{15}{0}{2}
-\beamer@sectionintoc {4}{Sym\IeC {\'e}trie - Mod\IeC {\`e}les de l'univers }{19}{0}{3}
-\beamer@sectionintoc {5}{Quotidien en cosmologie th\IeC {\'e}orique des particules}{20}{0}{4}
+\beamer@subsectionintoc {2}{2}{Atteinte du vide}{4}{0}{1}
+\beamer@subsectionintoc {2}{3}{Sym\IeC {\'e}trie et cosmologie}{8}{0}{1}
+\beamer@sectionintoc {3}{Solitons - Appareillage math\IeC {\'e}matique }{10}{0}{2}
+\beamer@subsectionintoc {3}{1}{\IeC {\'E}quation d'ondes et soliton}{10}{0}{2}
+\beamer@subsectionintoc {3}{2}{Formalisme Lagrangien}{14}{0}{2}
+\beamer@subsectionintoc {3}{3}{Kink}{16}{0}{2}
+\beamer@sectionintoc {4}{Sym\IeC {\'e}trie - Mod\IeC {\`e}les de l'univers }{20}{0}{3}
+\beamer@sectionintoc {5}{Quotidien en cosmologie th\IeC {\'e}orique des particules}{21}{0}{4}
