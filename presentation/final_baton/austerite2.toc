@@ -1,0 +1,10 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {french}
+\beamer@sectionintoc {2}{Cosmologie}{4}{0}{1}
+\beamer@subsectionintoc {2}{1}{Cosmologie 101}{4}{0}{1}
+\beamer@subsectionintoc {2}{2}{Notions de sym\IeC {\'e}trie}{6}{0}{1}
+\beamer@sectionintoc {3}{Solitons}{11}{0}{2}
+\beamer@subsectionintoc {3}{1}{Formalisme math\IeC {\'e}matique}{11}{0}{2}
+\beamer@subsectionintoc {3}{2}{Kink}{17}{0}{2}
+\beamer@sectionintoc {4}{Quotidien en cosmo des particules}{23}{0}{3}
+\beamer@sectionintoc {5}{BONUS!!!}{27}{0}{4}

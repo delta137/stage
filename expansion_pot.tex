@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+%espacement de ligne
+\usepackage{setspace}
+\renewcommand{\baselinestretch}{1.5} 
+% Graphiques et figures
+\usepackage{float}
+\usepackage{graphicx}
+%avoir des subfigures 
+\usepackage{caption}
+\usepackage{subcaption}
+%entourer une figure
+\usepackage{wrapfig}
+\begin{document}
+
+\section*{Résumé}
+
+\begin{align*}
+S=\int{d^2x[\frac{1}{2} (\frac{\partial \psi}{\partial x})^2 + \frac{1}{2} (\frac{\partial \phi}{\partial x})^2 -V(\phi,\psi)]}
+\end{align*}
+
+\begin{align*}
+\text{Solution statique:}& (\psi_o, \phi_o) \\
+\text{Solution déformée:}& (\psi_o, \xi(t)(\phi_o(x)+1)-1) \\
+\end{align*}
+
+\begin{align*}
+S=&\int{d^2x[\frac{1}{2}\dot{\xi}^2(\phi_o(x)+1)^2 - \left(\frac{1}{2}\xi^2\phi_o'^2 + \frac{1}{2}\psi_o'^2 +V(\phi_o,\psi_o,\xi(t))\right)]} \\
+=&\int{dt\left[\frac{1}{2}\dot{\xi}^2\underbrace{\int{dx  (\phi_o(x)+1)^2}}_M -\underbrace{\left( \xi^2\int{dx\phi_o'^2}+\int{dx\psi_o'^2}+\int{dxV(\phi_o,\psi_o,\xi(t))}\right)}_{U(\xi)}\right]} \\
+S=&\int{dt [\frac{1}{2}M \dot{\xi}^2 - U(\xi)]}
+\end{align*}
+par Euler-Lagrange:
+
+\begin{align*}
+\frac{1}{2}M \dot{\xi}^2 = U \\
+F(\xi) \equiv \dot{\xi} = \sqrt{2 U(\xi)/M}\\
+S_E =& \int{dt[M\dot{\xi}^2]}\\
+=& \int{dt[M F(\xi) \dot{\xi}]} \\
+=& \int_{1}^{\xi o} \mathrm{d}\xi [\sqrt{2M} \hat{F}(\xi)]\\
+\hat{F}=\sqrt{\xi^2\int{dx\phi_o'^2}+\int{dx\psi_o'^2}+\int{dxV(\phi_o,\psi_o,\xi(t))}}
+\end{align*}
+
+
+\begin{align*}
+V(\phi,\psi)=(\psi^2-\delta_1)(\psi^2-1)^2 + \frac{\alpha}{\psi^2+\gamma}\left[(\phi^2-1)^2 - \frac{\delta_2}{4}(\phi-2)(\phi+1)^2 \right] \\
+f \equiv \xi(\phi_o +1)\\
+V(f,\psi_o) = (\psi^2-\delta_1)(\psi^2-1)^2+\frac{\alpha}{\psi^2+\gamma}\left[(f^2-2f)^2 -\frac{\delta_2}{4}(f-3)f^2 \right]\\
+\int{dxV(\phi_o,\psi_o,\xi(t))} = \int{dx[\psi^2-\delta_1)(\psi^2-1)^2]} \
++\alpha\xi^2\left[& \xi^2\int{dx[\frac{(\phi_o+1)^4}{\psi_o^2+\gamma}]} \
+-\xi(4+\frac{\delta_2}{4})\int{dx[\frac{(\phi_o+1)^3}{\psi_o^2+\gamma}]} \\
+& +(4+\frac{3\delta_2}{4})\int{dx[\frac{(\phi_o+1)^2}{\psi_o^2+\gamma}]} \
+\right] \\
+\end{align*}
+
+\end{document}

@@ -1,0 +1,770 @@
+\documentclass{beamer}
+
+\mode<presentation>
+{
+  \usetheme{Warsaw} %type de présentation
+  \usecolortheme{crane}% couleur
+
+  \setbeamercovered{transparent} %laisse le texte à paraître en gris
+}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{lmodern}
+\usepackage[frenchb]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\frenchspacing
+
+\allowdisplaybreaks %?
+\let\Tiny=\tiny %pour enlever message erreur: Font shape `OT1/cmss/m/n? in size <4> not available
+                %(Font) size <5> substituted on input line...
+
+%\beamerdefaultoverlayspecification{<+->}
+
+
+%-----------------------------------------------------------------------------------------------------------------
+\title{Impact des défauts topologiques sur le taux de désintégration d'un faux vide}
+\subtitle{Conférence «FlashBac»}
+\author{Marie-Lou Gendron Marsolais}\institute{Université de Montréal, département de physique des particules}
+\date{Mars 2014}
+%-----------------------------------------------------------------------------------------------------------------
+
+\begin{document}
+
+%-----------------------------------------------------------------------------------------------------------------
+\begin{frame}
+\titlepage
+\end{frame}
+
+\AtBeginSection[]{
+  \begin{frame}{Sommaire}
+  \small \tableofcontents[currentsection]
+  \end{frame} 
+}
+%-----------------------------------------------------------------------------------------------------------------
+
+\section{Introduction}
+
+
+\begin{frame}
+\begin{itemize}
+\item Application de la théorie des champs (outil des physiciens des particules) en cosmologie (théorique).
+\item comment? \begin{itemize}
+               \item Univers primordial: matière très compressée et température très élevée : conditions semblables à celles produites dans les accélérateurs de particules.
+               \item À de telles énergies, les interactions entres les particules élémentaires sont correctement décrites par la théorie quantique des champs!
+               \end{itemize}
+\item Objectif:\begin{itemize}
+               \item Étudier l'impact possible des \textbf{défauts topologiques} sur le taux de désintégration par effet tunnel d'un faux vide (minimum relatif d'un potentiel) vers un vrai vide (minimum absolu). 
+               \item Étudier comment l'énergie des solutions statiques dépends des paramètres du modèle.
+               \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Désintégration par effet tunnel d'un faux vide}
+     \begin{columns}[t] % contents are top vertically aligned
+     \begin{column}[T]{3cm} % each column can also be its own environment
+     \visible<1->{
+     \begin{figure}
+     %\includegraphics[scale=0.4]{inf_old_inf}
+     \end{figure}
+     }
+     \end{column}
+     \begin{column}[T]{7cm}
+     \begin{itemize}
+     \item<2-> \underline{En mécanique classique}: il est possible d'avoir deux états stables avec différentes densités d'énergie.
+     \item<2-> \underline{En mécanique quantique}: l'état avec la plus grande densité d'énergie devient instable par effet tunnel.
+     \item<3-> \textit{Exemple familier}: eau en surchauffe
+     \end{itemize}
+     \end{column}
+     \end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Exemple: eau en surchauffe}
+\begin{figure}
+%\includegraphics[scale=0.3]{inf_old_inf}
+\end{figure}
+\begin{itemize}
+\item Liquide en surchauffe: liquide chauffé à une température plus grande que son point d'ébullition sans qu'il bouille.
+\item Graphique de l'énergie en fonction de la densité du fluide: le faux vide est la phase liquide surchauffée, le vrai vide est la phase vapeur.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Exemple: eau en surchauffe}
+\begin{figure}
+%\includegraphics[scale=0.3]{inf_old_inf}
+\end{figure}
+\begin{itemize}
+\item Des fluctuation thermodynamiques causent continuellement l'apparition de bulle de vapeur dans l'eau surchauffée
+\item Il est favorable de créer des bulles de vapeur...
+\item ...mais de l'énergie est dépensée lorsque que le champ passe par-dessus la barrière jusqu'au vrai vide: les murs de la bulle ont une tension de surface
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Exemple: eau en surchauffe}
+\begin{figure}
+%\includegraphics[scale=0.3]{inf_old_inf}
+\end{figure}
+$\rightarrow$ Si la bulle est trop petite, la diminution d'énergie par le vrai vide à l'intérieur est plus que compensé par la tension du mur et la bulle disparaît.\\
+$\rightarrow$ Mais si la bulle est assez grande pour qu'il soit énergétiquement favorable pour elle de prendre de l'expansion, elle grandira jusqu'à ce que toute l'eau soit devenue vapeur. (l'énergie du mur augmente comme l'aire d'une sphère ($4 \pi r^2$) mais la contribution négative de l'intérieur augmente plus rapidement, comme le volume d'une sphère ($4/3 \pi r^3$) )
+\end{frame}
+
+\begin{frame}
+\frametitle{En cosmologie:}
+$\rightarrow$Les fluctuations quantiques remplacent les fluctuations thermodynamiques.\\
+$\rightarrow$Une bulle de vrai vide assez grande (pour qu'il soit énergétiquement favorable pour elle de prendre de l'expansion) se formera, elle s'agrandira, convertissant le faux vide en vrai.
+
+\begin{itemize}
+\item Dans un univers infiniment vieux, on doit se trouver dans le vrai vide, peu importe le taux avec lequel le faux vide se désintègre
+\item Mais notre univers n'est PAS infiniment vieux! Au temps de l'univers primordial, l'énergie par unité de volume était très élevée, l'état de l'univers devait être très loin de tout vide, vrai ou faux. À mesure qu'il prend de l'expansion et se refroidit, il pourrait être tombé dans un faux vide à la place d'un vrai!
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\begin{itemize}
+\item<2-> Ce qu'il faut calculer c'est la probabilité de désintégration du faux vide par unité de temps et par unité de volume....
+\item<3-> \textit{Sydney Coleman, «Fate of the false vacuum: Semiclassical theory», 1977} 
+\visible<3->{
+\begin{figure}
+%\includegraphics[scale=0.6]{Sidney_Coleman}
+\end{figure}
+}
+\item<4-> Si on multiplie cette quantité par un temps et que celle-ci est de l'ordre de l'unité pour un temps de l'ordre de $10^9$ années: \textbf{« We have occasion for anxiety »}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{«Vacuum decay is the ultimate ecological catastrophe»}
+\begin{itemize}
+\item \textbf{Dans le vrai vide, les constantes de la natures, les masses et les constantes de couplage des particules élémentaires, sont toutes différentes de celles du faux vide (la chimie, la vie y est impossible telle que nous la connaissons)}
+\item «However, one could always draw stoic comfort from the possibility that perhaps in the course of time the new vacuum would sustain, if not life as we know it, at least some structures capable of knowing joy.» 
+\item \textit{ Coleman et De Luccia, «Gravitational effects on and of vacuum decay» 1980} :\\
+     «...This possibility has now been eliminated.»\\
+     Ajout des effets de la gravité: univers extrêmement instable qui s'effondrerait presque immédiatement.
+\end{itemize}
+\end{frame}
+
+
+
+
+\section{Brisure spontanée de symétrie}
+
+
+\begin{frame}
+\begin{block}{Brisure spontanée de symétrie:}
+\textbf{Les lois de la natures peuvent posséder des symétries qui nous ne sont pas manifeste parce que le vide n'est pas invariant sous elles.}
+\end{block}
+\visible<2->{
+\begin{exampleblock}{Exemple: Une balle de tennis en haut d'une colline.}
+C'est un état parfaitement symétrique: la balle n'a pas de raison de rouler à gauche ou à droite... \\
+Mais, toute perturbation fera rouler la balle d'un des côtés, choisis aléatoirement, et le résultat final sera un état asymétrique. \\
+La symétrie a été brisée, sans que le système (la colline) soit asymétrique.
+\end{exampleblock}
+}
+\end{frame}
+
+
+\begin{frame} 
+\begin{exampleblock}{Exemple: Matériau ferromagnétique}
+Les atomes d'un matériau ferromagnétique interagissent par une interaction entre les spins les plus proches voisins
+de telle sorte qu'ils ont tendance à s'aligner pour une température plus basse que la température de Curie pour ce matériau.\\
+~~\\
+L'hamiltonien (le système) est invariant sous rotation mais l'état fondamental ( où tout les dipôles sont alignés ) ne l'est pas.\\
+~~\\
+Un petit expérimentateur vivant dans un matériau ferromagnétique aurait beaucoup de difficulté à détecter l'invariance sous rotations des lois de la nature; toutes ses expériences seraient influencée par le champ magnétique, il n'aurait pas de raison de croire que l'invariance sous rotation est une symétrie exacte.
+\end{exampleblock}
+\end{frame}
+
+
+\begin{frame} 
+Substituez:
+\begin{itemize}
+\item<2-> l'hamiltonien du matériau ferromagnétique pour celui d'une théorie quantique des champs
+\item<2-> l'invariance sous rotation pour une autre symétrie
+\item<2-> l'état fondamental du matériau ferromagnétique par le vide
+\item<2-> le petit expérimentateur par nous
+\end{itemize}
+\visible<3->{
+\begin{center}
+Cette situation est appelée \\
+\textbf{BRISURE SPONTANÉE DE SYMÉTRIE}\\
+(La symétrie n'est pas vraiment brisée, elle est seulement cachée...)
+\end{center}
+}
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Les brisures spontanées de symétrie en cosmologie}
+\begin{itemize}
+  \item\textbf{Transitions de phases}\\
+  Si on remonte dans le temps, jusqu'au centième d'une seconde après le big bang, l'univers devient de plus en plus dense et chaud, jusqu'à ce que la matière change de phase (change de forme et de propriétés).
+  \item exemple familier: l'eau\\
+  à mesure qu'on augmente la température celle-ci passe de la phase solide (glace) à la phase liquide et éventuellement à la vapeur.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Les brisures spontanées de symétrie en cosmologie}
+\begin{itemize}
+  \item exemple familier: l'eau\\
+        La vapeur est «plus symétrique» que l'eau et l'eau est «plus symétrique» que la glace.\\
+        \underline{Pourquoi?}\\
+        L'eau liquide est symétrique sous rotation (est identique peu importe l'angle sous lequel on l'observe) Appelons cette symétrie G ( =SO(3) ). La phase solide, la glace, n'est pas uniforme dans toutes les directions, les cristaux de glace ont une direction préférée sur le réseau le long de laquelle les molécules d'eau s'alignent. le nouveau groupe de symétrie, H, est plus petit que G. \\
+        Par le processus de refroidissement donc, la symétrie originale G est brisée à H.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Les brisures spontanées de symétrie en cosmologie}
+C'est le même processus pour notre univers: \\
+~~\\
+Il commence dans une phase plus symétrique et passe au travers d'une succession de transition de phase jusqu'à ce que, à basse température, on retombe sur nos particules de matières familières.
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Les brisures spontanées de symétrie en cosmologie}
+\begin{itemize}
+\item \textbf{Grande unification (GUT):}\\
+La symétrie connue des particules élémentaires résultent d'un plus grand groupe de symétrie, lors d'une transition de phase, une partie de cette symétrie est perdue, alors la symétrie du groupe change.\\
+$G \rightarrow H \rightarrow...\rightarrow SU(3)\times SU(2)\times U(1)\rightarrow SU(3)\times U(1)$\\
+Chaque flèche représente une transition de phase avec brisure de symétrie.\\
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{unification}
+Les symétries que la matière présente sont associées aux différentes forces fondamentales de la nature:
+\begin{itemize}
+\item<2-> Électromagnétisme: groupe U(1)
+\item<2-> Force nucléaire faible: groupe SU(2)
+\item<2-> Force nucléaire forte: groupe SU(3)
+\item<2-> Gravité: ...?
+\end{itemize}
+\visible<3->{
+Cosmologie: \\
+À partir du début de l'univers (haute température, groupe G), il passera au travers d'une succession de transition de phase pendant lesquelles la force nucléaire se différentiera, suivit de la force nucléaire faible puis de l'électromagnétisme.
+}
+\end{frame}
+
+
+
+
+\section{Les défauts topologiques}
+
+\begin{frame}
+ \frametitle{Les défauts topologiques...}
+\textbf{...sont des configurations stables de matière formées lors de transitions de phase dans l'univers primordial.}\\
+\visible<2->{
+   \begin{alertblock}{Leur formation: mécanisme de kibble}
+   \begin{itemize}
+   \item À un temps t, les régions de l'univers séparées par une distance plus grande que d=ct ne peuvent rien savoir les unes des autres. Dans une transition de phase où la symétrie est brisée, différentes régions de l'univers choisiront de tomber dans différents minimum de l'ensemble des états possibles (vacuum manifold)
+   \item \textbf{Les défauts topologiques sont précisément les frontières entre ses régions avec différents choix de minimum} (leur formation est une conséquence inévitable du fait que différentes régions ne peuvent s'entendre sur leur choix).
+   \end{itemize}  
+   \end{alertblock}
+}
+\end{frame}
+
+
+
+
+ \begin{frame}
+  \frametitle{Les défauts topologiques en cosmologie}
+À mesure que l'univers se refroidit et prends de l'expansion, les symétries dans les lois de la physique commence à brisée dans des régions qui s'étendent à la vitesse de la lumière. \\
+~~\\
+Les défauts topologiques apparaissent lorsque différentes régions entre en contact les unes avec les autres. \\
+~~\\
+La matière contenue à l'intérieur de ses défauts est dans la phase symétrique originale, qui persiste après que la transition de phase dans la phase asymétrique soit complétée. 
+ \end{frame}
+ 
+ 
+ \begin{frame}
+\textbf{Selon la nature de la symétrie brisée}, différents solitons auront été formé à l'époque de l'univers primordial:
+\begin{itemize}
+\item<2-> \underline{Mur de domaine}: membrane 2d formée lors de la brisure d'une symétrie discrète
+\item<2-> \underline{Cordes cosmiques}: ligne 1d se formant lors de la brisure d'une symétrie axiale ou cylindrique
+\item<2-> \underline{Monopôles}: point 0d se formant lorsqu'une symétrie sphérique est brisée, ont une charge magnétique
+\item<2-> \underline{Textures}: se forme lorsqu'un groupe plus grand plus compliqué est brisé 
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+\begin{block}{Observation des défauts topologiques}
+Les défauts topologiques tels que ceux qui se seraient formés au début de l'Univers sont des phénomènes extrêmement énergétiques et ne pourraient être reproduit sur terre, mais pourraient, en théorie, être observés...mais ne l'ont encore jamais été!
+\begin{itemize}
+\item Certains types de défauts topologiques ne sont pas compatibles avec les observations actuelles:
+\item Mur de domaines et Monopôles $\rightarrow$ mèneraient à d'importantes déviations par rapport aux observations. 
+\item $\Rightarrow$ Les théories prédisant ses structures dans l'univers observable doivent être éliminées. 
+\item Cordes cosmiques et (possiblement) textures $\rightarrow$ premières « sources » de gravité autour desquels les grandes structures de matière se sont condensées.
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+
+
+\section{Les solitons}
+
+
+
+
+
+\begin{frame}
+\frametitle{Exemple: L'équation d'onde}
+\begin{equation*}
+\ \frac{1}{c^{2}} \dfrac{d^{2}\phi}{dt^{2}} - \dfrac{d^{2}\phi}{dx^{2}} = 0
+\end{equation*}
+\begin{itemize}
+\item<1-> Équation générale qui décrit la propagation d'une onde
+\item<1-> Équation \textbf{linéaire non-dispersive}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
+\item Propriétés des solutions:
+      \begin{itemize}
+      \item Toute fonction de la formes $f(x\pm ct)$ est une solution.
+      \item Les ondes planes $\cos(kx\pm\omega t)$ et $\sin(kx\pm\omega t)$, où $\omega=kc$, forment un ensemble complet de solutions
+      \item En choisissant une fonction f localisé, il est possible de construire un paquet d'onde localisé voyageant à une vitesse uniforme $\pm c$ sans déformation dans sa forme.
+      \item Ceci est relié au fait que toutes ses composantes, les ondes planes, se propagent à la même vitesse $c=\omega/k$.
+      \item Linéarité $\Rightarrow$ soit 2 paquets d'ondes localisés, $f_{1}(x-ct)$ et $f_{2}(x+ct)$. Leur somme $f_{3}(x-ct) = f_{1}(x-ct) + f_{2}(x-ct)$ est aussi une solution. À $t\rightarrow-\infty$, il s'agit de 2 paquets s'approchant l'un vers l'autre sans être déformé. Il y a ensuite collision, et, à $t\rightarrow+\infty$, les deux paquets retrouvent leurs formes et leurs vitesses initiales.
+      \end{itemize}
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+\begin{block}{L'équation d'onde}
+Donc, essentiellement 2 propriétés:
+\begin{itemize}
+\item <2-> 1) forme et vitesse constante
+\item <2-> 2) forme et vitesse asymptotiquement retrouvées après une collision
+\end{itemize}
+\end{block}
+\visible<3->{Mais qu'en est-il des équations non-linéaires et dispersives?
+Exemple d'équation dispersive: équation de Klein-Gordon}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Exemple: L'équation de Klein-Gordon}
+\begin{equation*}
+\ \frac{1}{c^{2}} \dfrac{d^{2}\phi}{dt^{2}} - \dfrac{d^{2}\phi}{dx^{2}} + m c^{2}\phi= 0
+\end{equation*}
+\begin{itemize}
+\item Équation \textbf{linéaire dispersive}
+\item Propriétés des solutions:
+      \begin{itemize}
+      \item Les ondes planes $\cos(kx\pm\omega t)$ et $\sin(kx\pm\omega t)$, forment encore un ensemble complet de solutions
+      \item Mais ici: $\omega^{2}=k^{2}c^{2} + m^{2}c^{4}$\\
+            $\Rightarrow$ différentes longueurs d'onde voyagent à différentes vitesses $\omega(k)/k$\\
+            $\Rightarrow$ équation dispersive
+            $\Rightarrow$ un paquet d'onde se dispersera dans le temps
+      \end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{alertblock}{Mais...}
+Il est possible, pour certains systèmes d'équation différentielles partielles, à la fois \textbf{non-linéaires et dispersifs} d'avoir des solutions avec la propriété (1) \\
+$\rightarrow$ ce sont des \underline{ondes solitaires}!\\
+~~\\
+Si les solutions respectent également (2)\\
+$\rightarrow$ ce sont des \underline{solitons}!\\
+~~\\
+Comment est-ce possible?\\
+Les effets non-linéaires et dispersifs s'annulent.
+\end{alertblock}
+\end{frame}
+
+
+
+
+
+\begin{frame}
+Mais c'est quoi le rapport avec tout le reste???\\
+~~\\
+On s'intéresse aux défauts topologiques: on aimerait trouver une solution mathématique reliant deux minimum différents d'un potentiel après une transition de phase brisant la symétrie de la phase initiale.\\
+~~\\
+Il se trouve que dans le modèle qui nous intéresse, les défauts topologiques seront des solutions de systèmes d'équations différentielles non-linéaires et dispersifs: on aimerait trouver des solutions avec les propriétés des solitons.\\
+~~\\
+$\rightarrow$ Exemple: 
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Mon premier soliton:}
+Champ scalaire en 1+1 dimension avec densité lagrangienne:
+\begin{equation*}
+\mathcal{L} = \frac{1}{2} (\dot{\phi})^{2} -\frac{1}{2} ({\phi'})^{2} -V\left( \phi \right)
+\end{equation*}
+(ici, $c=1$)\\
+À partir du principe de moindre action ( $\leftrightarrow$ équations de Euler-Lagrange), on trouve l'équation de mouvement:\\
+\begin{equation*}
+\ddot{\phi} -\phi'' = - \dfrac{\partial V}{\partial \phi}
+\end{equation*}
+On reconnait notre équation d'onde précédente, mais avec des termes non-linéaires et dispersifs qui dépendent de $V\left( \phi \right)$
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Mon premier soliton:}
+L'équation conserve, à mesure que le temps varie, l'énergie totale donnée par:
+\begin{equation*}
+E\left[  \phi \right] = \int_{-\infty} ^{+\infty} dx 
+\left[   \frac{1}{2} (\dot{\phi})^{2} + \frac{1}{2} ({\phi'})^{2} + V\left( \phi \right)  \right] 
+\end{equation*}
+Posons que $V\left( \phi \right)$ possèdent M minimums absolus qui soient également ses zéros:
+\begin{equation*}
+V\left( \phi \right) = 0 \text{ pour } \phi = g^{i} \text{, où } i=1,...,M
+\end{equation*}
+L'énergie est minimisée par la solution triviale:
+\begin{equation*}
+\phi (x,t) = g^{i}
+\end{equation*}
+qui donne une énergie de
+\begin{equation*}
+E\left[  \phi \right]  = 0
+\end{equation*}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Mon premier soliton:}
+Intéressons-nous aux solutions statiques:
+\begin{equation*}
+\phi'' =  \dfrac{\partial V}{\partial \phi}
+\end{equation*}
+On veut une solution non-triviale, mais d'énergie finie, de densité d'énergie localisée:\\
+Ceci implique que lorsque $x\rightarrow \pm \infty$ le champ doit tendre vers l'une des valeurs $g^{i}$.
+S'il y a plus d'un minimum ($M>1$), $\phi (x)$ doit tendre vers l'un d'eux à $x\rightarrow - \infty$ et de même pour $x\rightarrow + \infty$ (pas nécessairement le même!!)
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Mon premier soliton: \textbf{Le Kink}}
+Prenons un potentiel d'ordre 4:
+\begin{equation*}
+V\left( \phi \right) = \frac{1}{4} \lambda \left(   \phi^{2} -\frac{m^{2}}{\lambda}  \right) ^{2}
+\end{equation*}
+ce qui donne l'équation de mouvement statique:
+\begin{equation*}
+\phi'' =  \dfrac{\partial V}{\partial \phi} = \lambda \phi ^{3} -m^{2} \phi
+\end{equation*}
+Deux minimums dégénérés: $\phi = \pm  \frac{m}{\sqrt{\lambda}} $.\\
+Solution localisée d'énergie finie $\Rightarrow$ $\phi\rightarrow \pm  \frac{m}{\sqrt{\lambda}}$ pour $x\rightarrow \pm \infty$\\
+Solution:
+\begin{equation*}
+\phi(x) =  \pm \frac{m}{\sqrt{\lambda}} \tanh \left[  \frac{m}{\sqrt{2}} (x-x_{0})     \right] 
+\end{equation*}
+La solution avec le $+$ est le kink, celle avec le $-$ est l'anti-kink
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Mon premier soliton: \textbf{Le Kink}}
+     \begin{columns}[t] % contents are top vertically aligned
+     \begin{column}[T]{4cm} % each column can also be its own environment
+     \begin{figure}
+     %\includegraphics[scale=0.22]{kink_solution}
+     \end{figure}
+     \end{column}
+     \begin{column}[T]{6cm}
+     ~~\\
+     ~~\\
+     ~~\\
+     Sous une transformation de Lorentz, on obtient un kink se déplaçant avec une vitesse u, et qui est aussi solution de l'équation de mouvement:
+     \end{column}
+     \end{columns}
+\begin{equation*}
+\phi(x) =  \pm \frac{m}{\sqrt{\lambda}} \tanh \left[  \frac{m}{\sqrt{2}} 
+\dfrac{(x-x_{0}) -u\cdot t}{\sqrt{1-u^{2}}}     \right] 
+\end{equation*}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Mon premier soliton: \textbf{Le Kink}}
+\visible<1->{ $\star$ On peut calculer la densité d'énergie de cette solution et celle-ci est bien localisée, et son énergie totale est aussi finie: on a une onde solitaire...mais pas un soliton\\
+$\star$Ressemble à de la matière: morceau d'énergie statique localisé}
+
+\visible<2->{...et c'est un défaut topologique!\\
+$\star$ Brisure spontanée de symétrie:\\
+Sous la symétrie $\phi \rightarrow - \phi $, $\mathcal{L} \rightarrow \mathcal{L}$: le langrangien est invariant, \\
+mais l'état fondamental ne l'est pas; si le champ «tombe» dans l'état $\phi= + \frac{m}{\sqrt{\lambda}}$,
+$\phi \rightarrow - \phi $ donne $\phi \rightarrow - \frac{m}{\sqrt{\lambda}} $  }
+
+\visible<3->{$\star$ Défauts topologiques: solutions de systèmes d'équations différentielles partielles qui sont distinctes «topologiquement» de la solution triviale: à cause des conditions frontières imposées, elles ne peuvent être déformées de façon continue jusqu'à une solution triviale.}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+\section{Le modèle}
+
+
+
+\begin{frame}
+Nous considérons un modèle abélien de Higgs en 2+1 dimensions avec une potentiel scalaire d'ordre 6, contenant: un champ scalaire complexe $\phi$ (boson de spin 0) et un champ de gauge $A_\mu$ (boson de spin 1)
+\begin{center}
+\begin{equation*}
+\begin{array}{l}
+\mathcal{L} = -\frac{1}{4} F_{\mu \nu} F^{\mu \nu} +\left( D_\mu \phi \right)\left( D^\mu \phi \right)^* -V\left( \phi^* \phi \right)  \\
+\\
+F_{\mu \nu}=\partial_\mu A_\nu-\partial_\nu A_\mu   \\
+D_\mu  = (\partial_\mu -ieA_\mu) 
+\end{array}
+\end{equation*}
+\end{center}
+Le potentiel scalaire utilisé est:
+\begin{equation*}
+V\left( \phi^* \phi \right)= (|\phi|^2 -\epsilon) (|\phi|^2-1)^2 
+\end{equation*}
+où $0<\epsilon<1$ :\\
+Le potentiel a un vrai vide à $\phi=0$ et un faux vide à $|\phi|=1$.
+\end{frame}
+
+\begin{frame}
+\begin{figure}
+%\includegraphics[scale=0.16]{potentiel_ordre_6}
+\end{figure}
+Ici, le lagrangien est invariant sous une transformation locale U(1): 
+\begin{equation*}
+\begin{array}{l}
+\phi (x) \rightarrow e^{i \alpha (x)} \phi (x) \text{   et   }  A_\mu (x) \rightarrow A_\mu(x)-\frac{1}{e} \partial_{\mu} \alpha (x)
+\end{array}
+\end{equation*} 
+Si le potentiel a un minimum à $|\phi| =0$, sous cette symétrie, $\phi\rightarrow 0 \cdot e^{i \alpha (x)} $,\\
+Mais si le potentiel a un minimum à $|\phi| = \upsilon \neq 0$, $\phi\rightarrow\ \upsilon e^{i \alpha (x)}$\\
+$\Rightarrow$ Brisure spontanée de symétrie!
+\end{frame}
+
+
+\begin{frame}
+\begin{itemize}
+\item<1-> Dans un modèle où le potentiel est de cette forme et où l'Univers est dans un faux vide ($|\phi|=1$), le vide va éventuellement se désintégrer.
+\item<2-> La désintégration standard du vide (Coleman) est supprimée exponentiellement, alors l'Univers pourrait demeurer dans ce vide pour très longtemps...
+\item<3-> MAIS! de façon générale, des défauts topologiques se forment dans une transition de phase: et si notre faux vide contenait déjà des défauts topologiques provenant d'une transition de phase précédente?
+\end{itemize}
+\end{frame}
+
+
+
+
+\begin{frame}
+\visible<1->{
+\begin{figure}
+%\includegraphics[scale=0.2]{4_potentiels}
+\end{figure}
+}
+\begin{itemize}
+\item Dans un potentiel A: univers stable dans le vrai vide $|\phi|=1$, symétrie brisée, contenant des défauts topologiques dont l'intérieur est à $|\phi|=0$.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\visible<1->{
+\begin{figure}
+%\includegraphics[scale=0.15]{4_potentiels}
+\end{figure}
+}
+\begin{itemize}
+\item À $r\rightarrow \infty$, il faut que $|\phi| \rightarrow 1$, pour avoir une énergie finie,
+\item ...mais rien ne contraint la phase de $\phi$, à part qu'elle doit changer par $2\pi n$, $n$ entier, lorsque l'angle polaire change de $2\pi$. 
+\item $n$ est le \underline{nombre d'enroulement}.
+\item En 3 dimensions spatiales, cela forme des \textbf{cordes cosmiques}, en 2 dimensions, ce sont des «sections» de cordes: des \textbf{vortex}
+\item Par continuité, il faut que $|\phi| =0$ à quelque part, on choisit à $r=0$.
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+\visible<1->{
+\begin{figure}
+%\includegraphics[scale=0.15]{4_potentiels}
+\end{figure}
+}
+\begin{itemize}
+\item Le potentiel se modifie et devient comme D: l'univers est métastable, car dans un faux vide, et se désintègre vers le vrai vide (selon le taux de Coleman) ce qui restaure la symétrie.
+\item Qu'en est-il des défauts topologiques qui sont présents?\\
+      Leur centre est \textbf{déjà} à $|\phi|=0$\\
+\item ...intuitivement, cela devrait \textbf{accélérer} la désintégration...
+\item...Ce n'est pas toujours le cas, mais il est possible d'accélérer la désintégration par rapport à une désintégration normale (Coleman).
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+Objectif: calculer le taux de désintégration quantique de ces faux vortex
+\begin{itemize}
+\item<2-> ...d'abord pour déterminer leur temps de vie
+\item<2-> ...pour le comparer au taux de désintégration du faux vide sans vortex
+\end{itemize}
+\visible<3->{
+Bref, quel est l'effet d'un gaz de faux vortex sur le taux de désintégration?
+}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}
+Nous sommes à la recherche de \textbf{solution symétrique sous rotation pour $\phi$ et $A_\mu$, en cordonnées polaires $(r,\theta,t)$}. \\
+Nous utiliserons l'ansatz dépendant du temps suivant pour un vortex de nombre d'enroulement $n$:
+\begin{equation*}
+\phi(r,\theta,t)=f(r,t)e^{in\theta} \quad  A_i (r,\theta,t) = -\frac{n}{e} \frac{\varepsilon^{ij} x_j}{r^2} a(r,t) ,
+\end{equation*}
+où $\varepsilon^{ij}$ est le symbole de Levi-Civita en deux dimensions.
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Solution statique}
+Avec cet ansatz, les équations de mouvements (solution statique) sont:
+\begin{equation*}
+\begin{array}{l}
+f''+\dfrac{f'}{r}-\dfrac{n^2}{r^2}(1-a)^2 f-\dfrac{1}{2}\dfrac{\partial V}{\partial f}=0\\
+a''-\dfrac{a'}{r}+2e^2 (1-a)f^2 =0 .
+\end{array}
+\end{equation*} 
+avec les conditions frontières suivantes:
+\begin{equation*}
+\begin{array}{l}
+f(r)\to 0, \; \: a(r)\to 0 \; \: pour \; \: r\to 0\\
+f(r)\to 1, \; \: a(r)\to 1 \; \: pour \; \: r\to \infty .
+\end{array}
+\end{equation*} 
+Ces conditions sont imposés pour la continuité des champs à $r=0$ et pour avoir une énergie finie. 
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Solution statique}
+Les solutions numériques aux équations différentielles du modèle peuvent être séparées en deux profiles:
+\visible<1->{
+\begin{figure}
+%\includegraphics[scale=0.3]{solutions_vortex_decay}
+\end{figure}
+}
+\visible<1->{
+Une configuration de type «thin-wall» est plus pratique car elle permet de faire certaines approximations.
+}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Résultats ($\epsilon$ petit)}
+Les taux de désintégration: 
+\begin{equation*}
+\begin{array}{l}
+\Gamma^{vortex} =        A^{vortex} \left( \dfrac{ S^{vortex}}{2 \pi} \right)  ^{\frac{1}{2}} e^{-S^{vortex}} \\
+\Gamma^{Coleman}= \Omega A^{Coleman}\left( \dfrac{ S^{Coleman}}{2 \pi} \right) ^{\frac{3}{2}} e^{-S^{Coleman}}
+\end{array}
+\end{equation*}
+Dans la limite d'un $\epsilon$ petit, les actions euclidiennes $S$ sont:
+\begin{equation*}
+\begin{array}{l}
+S^{vortex} =\dfrac{4 \sqrt{2} \pi}{15 \epsilon^2} \: \: \:
+S^{Coleman}   =\dfrac{\pi}{12 \epsilon^2}
+\end{array}
+\end{equation*}
+où $\Omega$ est le volume considéré.
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Résultats ($\epsilon$ petit)}
+Le rapport des taux de désintégration, avec $N$ vortex dans un volume $\Omega$ :
+\begin{equation*}
+\dfrac{\Gamma^{Coleman}}{N \Gamma^{vortex}} =
+\dfrac{\Omega A^{Coleman}}{N A^{vortex}} \dfrac{\sqrt{5}}{2^{1/4} 96 \epsilon^{2}}
+e^{ \left( \frac{4 \sqrt{2}}{15} - \frac{1}{12} \right)  \frac{\pi}{\epsilon^{2}}  }
+\end{equation*}
+Bref:
+\begin{equation*}
+\Gamma^{Coleman} \sim e^{  0,294   \dfrac{\pi}{\epsilon^{2}}  } \cdot \Gamma^{vortex}
+\end{equation*}
+Avec $\epsilon$ petit, $\Gamma^{Coleman} \gg  \Gamma^{vortex}$...les vortex entravent la désintégration plus qu'ils ne la catalysent...
+\end{frame}
+
+\begin{frame}
+\frametitle{Résultats (limite de dissociation)}
+Au lieux de prendre l'approximation $\epsilon \rightarrow 0$, on pourrait faire le contraire, prendre la plus grande valeur d'$\epsilon$ possible: $\epsilon_{c}$.\\
+~~\\
+Pour un $\epsilon > \epsilon_{c}$, on ne trouve plus de solutions numériques (le vortex n'est plus stable classiquement).\\
+~~\\
+La valeur de $\epsilon_{c}$ dépends de $n$ et de $e$.\\
+Dans la limite « de dissociation », où $\epsilon \rightarrow \epsilon_{c}$ :
+\begin{equation*}
+\begin{array}{l}
+S^{vortex} = 2\pi \left(  \dfrac{2 n}{e}  \right)^{4/3}   \dfrac{2^{-5/12} 3^{5/2}}{5} 
+\left(  \dfrac{\epsilon_{c}- \epsilon}{\epsilon_{c}} \right)  ^{5/4} \rightarrow 0
+\end{array}
+\end{equation*}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Résultats (limite de dissociation)}
+Dans la limite « de dissociation », où $\epsilon \rightarrow \epsilon_{c}$ :
+\begin{equation*}
+\Gamma^{Coleman} \sim e^{  -S^{Coleman} +S^{vortex} } \cdot \Gamma^{vortex} \rightarrow e^{  -\dfrac{\pi}{12 \epsilon^2} + 0 } \cdot \Gamma^{vortex}
+\end{equation*}
+~~\\
+$\Gamma^{Coleman} <  \Gamma^{vortex}$: les vortex catalysent la désintégration !!!
+\end{frame}
+
+
+
+\section{Conclusion}
+
+
+\begin{frame}
+\frametitle{Conclusion}
+\begin{itemize}
+\item Défauts topologiques: se forment lors de transitions de phases
+\item S'ils sont déjà présent dans le faux vide, ils peuvent augmenter le taux de désintégration de ce dernier vers un vrai vide, pour certaines valeurs de paramètres de notre modèle...
+\item À faire: généraliser en 3+1 dimensions (cordes cosmiques) et inclure les effets gravitationnels
+\item MERCI!!!
+\end{itemize}
+\end{frame}
+
+
+\end{document}

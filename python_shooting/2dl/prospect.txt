@@ -1,0 +1,50 @@
+par: alpha beta gamma delta1 delta2
+code:  1   1    1    1     1  
+psi'(0):-0.000000, phi(0):0.866526, err:-0.000000,-0.000000par: alpha beta gamma delta1 delta2
+code:  1    1     1     1      1  
+psi'(0):-6.333671e-15, phi(0):8.665256e-01, err:-2.730107e-13,-1.777467e-13par: alpha beta gamma delta1 delta2
+code:  1    1     1     1      1  
+psi'(0):-6.333671e-15, phi(0):8.665256e-01, err:-2.730107e-13,-1.777467e-13 
+
+par: alpha beta gamma delta1 delta2
+code:  1    1     1     1      1  
+psi'(0):-6.333671e-15, phi(0):8.665256e-01, err:-2.730107e-13,-1.777467e-13 
+
+par: alpha beta gamma delta1 delta2
+code:  1    1     1     1      1  
+psi'(0):-6.333671e-15, phi(0):8.665256e-01, err:-2.730107e-13,-1.777467e-13 
+
+par: alpha beta gamma delta1 delta2
+code:  1    1     1     1      1  
+ch: psi'(0) phi(0) err(cond1) err(cond2)
+resch:-6.333671e-15    8.665256e-01    -2.730107e-13   -1.777467e-13 
+
+par: alpha beta gamma delta1 delta2
+       1    1     1     1      1  
+ch: psi'(0)    phi(0)  err(cond1)  err(cond2)
+      -6.333671e-15       8.665256e-01           -2.730107e-13          -1.777467e-13 
+
+par: alpha beta gamma delta1 delta2
+       1    1     1     1      1  
+ch:   psi'(0)           phi(0)          err(cond1)          err(cond2)
+    -6.333671e-15             8.665256e-01                  -2.730107e-13               -1.777467e-13 
+
+par: alpha beta gamma delta1 delta2
+       1    1     1     1      1  
+ch:   psi'(0)           phi(0)          err(cond1)          err(cond2)
+    -6.333671e-15          8.665256e-01                  -2.730107e-13               -1.777467e-13 
+
+par: alpha beta gamma delta1 delta2
+       1    1     1     1      1  
+ch:   psi'(0)           phi(0)          err(cond1)          err(cond2)
+    -6.333671e-15         8.665256e-01            -2.730107e-13               -1.777467e-13 
+
+par: alpha beta gamma delta1 delta2
+       1    1     1     1      1  
+ch:   psi'(0)           phi(0)          err(cond1)          err(cond2)
+    -6.333671e-15      8.665256e-01         -2.730107e-13            -1.777467e-13 
+
+par: alpha beta gamma delta1 delta2
+       1    1     1     1      1  
+ch:   psi'(0)           phi(0)          err(cond1)          err(cond2)
+    -6.333671e-15      8.665256e-01      -2.730107e-13         -1.777467e-13 

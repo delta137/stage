@@ -1,0 +1,9 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {french}
+\beamer@sectionintoc {2}{Solitons - Appareillage math\IeC {\'e}matique }{3}{0}{1}
+\beamer@subsectionintoc {2}{1}{\IeC {\'E}quation d'ondes et soliton}{3}{0}{1}
+\beamer@subsectionintoc {2}{2}{Formalisme Lagrangien}{7}{0}{1}
+\beamer@subsectionintoc {2}{3}{Kink}{8}{0}{1}
+\beamer@sectionintoc {3}{Sym\IeC {\'e}trie - Mod\IeC {\`e}les de l'univers }{11}{0}{2}
+\beamer@sectionintoc {4}{Cosmologie - }{12}{0}{3}
+\beamer@sectionintoc {5}{Quotidien en cosmologie th\IeC {\'e}orique des particules}{12}{0}{4}

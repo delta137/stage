@@ -1,0 +1,11 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {french}
+\beamer@sectionintoc {2}{Cosmologie}{4}{0}{1}
+\beamer@subsectionintoc {2}{1}{Cosmologie 101}{4}{0}{1}
+\beamer@subsectionintoc {2}{2}{Notions de sym\IeC {\'e}trie}{6}{0}{1}
+\beamer@subsectionintoc {2}{3}{Sym\IeC {\'e}trie et cosmologie}{10}{0}{1}
+\beamer@sectionintoc {3}{Solitons - Appareillage math\IeC {\'e}matique }{11}{0}{2}
+\beamer@subsectionintoc {3}{1}{\IeC {\'E}quation d'ondes et soliton}{12}{0}{2}
+\beamer@subsectionintoc {3}{2}{Formalisme Lagrangien}{16}{0}{2}
+\beamer@subsectionintoc {3}{3}{Kink}{18}{0}{2}
+\beamer@sectionintoc {4}{Quotidien en cosmologie th\IeC {\'e}orique des particules}{25}{0}{3}

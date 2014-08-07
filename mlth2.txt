@@ -1,0 +1,68 @@
+500 - Epsilon crit: expliquer plus d'où ça vient (plus que en analysant l'énergie du vortex)
+
+461 - je ferais 2 phrases: Habituellement, blabla. Dans notre cas, blabla
+
+534 - choisi
+
+518 - à partir de "où", ta phrase est trop longue et sinueuse je trouve
+
+518 Lorsque l'une d'elleS est assez grande, celle-ci s'étend ...
+
+545 pense que Yan l'a marquée celle la... tu peux pas répéter autant de mu, 
+dans ton L, mets alpha par exemple
+
+561 relâchée
+
+578 à 583 Il me semble que tu pourrais directement dire que c'est pas sûr si c'est l'action la plus basse.
+
+380 pas sûr pourquoi on a besoin de toutes ces dérivées...
+
+455 je dirais que a-point et f-point, on exige quils soient nuls. 
+Pas on prend seulement cette partie du lagrangien
+
+550 Ce serait une bonne idée de référencer l'équation de mouvement et de la citer avant d'écrire ce gros calcul
+
+551  qu'il y a ... et que le système admtet donc
+
+561 relâchée
+
+566 à 569 pas très clair tout ça je trouve
+
+page 45... je sais pas si c'est nécessaire autant que ça. C'est Yan qui m'a dit,
+jle mets au cas qu'il ait oublié dans son document, tu devrais citer ta sourcer
+
+page 55 deux taux calculés
+
+809 pas sûr pour les ...
+
+après éq 3.2 page 27, dérivée complète pour dV/dq non? même chose page 28
+
+542 calcule
+
+545 dérivée totale
+
+546 pourrais-tu dire à quoi phi+ fait référence? Remettre en contexte
+
+équation 550 deuxieme ligne, le dernier d/drho est mal écrit
+
+tu pourrais mettre plus de numéros d'équations, ou au moins plus de références
+dans le corps du texte. Par exemple, la passe à la ligne 563 où tu dis: et donc:
+je trouve ça un peu court. Tu pourrais donner la référence de l'équation du mouvement 
+ou bien le dire dans le texte. Peut-être que tu vas me dire que cet exemple est vraiment trop 
+de base
+
+jpense je l'ai déjà dit, mais de 566 à 569, pas très clair. Faudrait expliquer
+
+Commentaire général: après avoir feuilleté google, je trouve qu'il faudrait dire:
+Modèle de Higgs abélien. C'est la formulation la plus répandue.
+
+683 equations.  Ya plusieurs choses qui gagneraient à être plus claires.
+Je sais pas si c'est commun de multiplier ton équation au complet par dR/Dtau
+mais j'étais un peu mélangé au départ. Faudrait au moins le mentionner en quek part
+ou utiliser une notation plus claire.
+
+Dans les mêmes équations, jme demande s'il y aurait une façon plus élégante de dévelooper
+le dB/dR * dR/dtau * (\dot{R})^2 
+
+686 compliqués: me semble un mot moyen. Je dirais plutôt que la Forme compliquée de B et E ne
+permet pas de résoudre analytiquement S.

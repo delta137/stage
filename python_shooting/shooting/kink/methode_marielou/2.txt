@@ -1,0 +1,5 @@
+xl,xr,n = 0,5,50 #bornes et nombre de pts d'integration
+
+intervalle de guess: [0.3 , 0.9]
+10 iterations -- fail, trop haut
+cible: y(2) = 0.88 *sol analy 

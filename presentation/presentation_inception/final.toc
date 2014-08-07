@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {french}
+\beamer@sectionintoc {2}{Cosmologie}{3}{0}{1}
+\beamer@subsectionintoc {2}{1}{Cosmologie 101}{3}{0}{1}
+\beamer@subsectionintoc {2}{2}{Atteinte du vide}{6}{0}{1}
+\beamer@subsectionintoc {2}{3}{Sym\IeC {\'e}trie et cosmologie}{9}{0}{1}
+\beamer@sectionintoc {3}{Solitons - Appareillage math\IeC {\'e}matique }{10}{0}{2}
+\beamer@subsectionintoc {3}{1}{\IeC {\'E}quation d'ondes et soliton}{10}{0}{2}

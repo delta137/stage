@@ -1,0 +1,165 @@
+597 equation bizarre, int[dx] what?
+S= (2/3)(mu^3/lamba) -­> Coleman c'est (1/3) équation 4.12
+region du mur donne SE = ... =? ILLÉGAL!
+605 Jpense pas que dire: En résumé, est très légit. À la limite, je dirais: BREF
+608 nrebondz? whatsy
+614 Je parlerais aussi analogie friction... la particule se déplace dans du miel qui devient de moisn en moins ruguex :D
+COefficient A: vas-tu en parler? :P
+/////////////////
+chap 4 ---- INTENSE
+630 du faux
+636 peut
+640 conseil: arrange tes intégrales pour que les grosses parantheses soient aussi dedans
+643 éq. des champs euclidiennes... bizarre, p-e tu peux reformuler
+646 réduit à DE l'effet tunnel? (jtrouve pas ça beau)
+651 inférieure
+660 profil!
+671 déterminée
+680 continue
+692 à 694 phrases pas claires
+après 696, rendu pas très beau avec les virgules trop proches des conditionjs
+702 solutions ...  stables
+724 pas est,  -­> ait
+736 reviendrons
+737 afin
+eq 4.18 à 4.20: arranger les intégrales
+748 possède
+749  Multipliées
+756 tend
+pages 50-51 beaucoup de chose, pêle-mêle
+781 fonctions
+784 rédéfini
+803  profil
+page 55 unité
+dépend
+calculés
+
+faux vides ordinaires
+809  espace après ...
+817 se dissocier
+822 pas de sehttps://acces.sansfil.umontreal.ca/fs/customwebauth/login.html?switch_url=https://acces.sansfil.umontreal.ca/login.html&ap_mac=00:23:04:89:bc:10&client_mac=00:1b:fc:d2:ff:b3&wlan=UdeM%20non%20securise&redirect=ici.radio-canada.ca/
+822 s'approchent
+828 tend
+835 calcule
+après 834 est-ce que les équations sont consistentes avec ce que tu dis en 834
+841 égal
+Est-ce qu'il faut dire que c'est avec MATLAB ou juste numériquement?
+
+///// CHAPITRE 5 /////  
+eq 5.1 Dmu Dmu change le conjugué de place
+eq 5.3 pas sûr
+je dirais plus F12=B
+933 correspond
+948 choisi
+961 seules
+962 divisée
+clarifier BPS
+978 je dirais de façon surprenante
+980 dépend
+993 Bolognesi?
+1026 aux
+1035 car il est donc
+1039 ces
+1049 faibles valeurs
+1050 assure toi d'appliquer l'exposant n à (r/R)
+1067 trouvée
+1069 trouvée
+1068 moi je suis contre MATLAB et dire Trapz :P
+1079 très jolie formulation, aucune trace de MATLAB
+1081 semblent
+1097 un peu long
+1103 dépend
+et/ou
+élevés
+profil
+1104 où
+1105 majuscule
+1113 drole de formulation
+1115 ça finit bizarrement
+1119 t'a jamais parlé de matrice A ou vect B
+1120 à
+1130 faibles
+1137 si tu cites une figure  d'un autre article, faudrait peut-être la mettre?
+1140 pas trop petites
+et ouin, pas trop petites fait pas très scientifique :/
+1142 Tout cela fait du sens ? whatsy :P
+1148 prend
+1151 on a vu que...  je le dirais au passé composé
+
+
+////EQUATIONS LOL
+500 - Epsilon crit: expliquer plus d'où ça vient (plus que en analysant l'énergie du vortex)
+
+461 - je ferais 2 phrases: Habituellement, blabla. Dans notre cas, blabla
+
+534 - choisi
+
+518 - à partir de "où", ta phrase est trop longue et sinueuse je trouve
+
+518 Lorsque l'une d'elleS est assez grande, celle-ci s'étend ...
+
+545 pense que Yan l'a marquée celle la... tu peux pas répéter autant de mu, 
+dans ton L, mets alpha par exemple
+
+561 relâchée
+
+578 à 583 Il me semble que tu pourrais directement dire que c'est pas sûr si c'est l'action la plus basse.
+
+380 pas sûr pourquoi on a besoin de toutes ces dérivées...
+
+455 je dirais que a-point et f-point, on exige quils soient nuls. 
+Pas on prend seulement cette partie du lagrangien
+
+550 Ce serait une bonne idée de référencer l'équation de mouvement et de la citer avant d'écrire ce gros calcul
+
+551  qu'il y a ... et que le système admtet donc
+
+561 relâchée
+
+566 à 569 pas très clair tout ça je trouve
+
+page 45... je sais pas si c'est nécessaire autant que ça. C'est Yan qui m'a dit,
+jle mets au cas qu'il ait oublié dans son document, tu devrais citer ta sourcer
+
+page 55 deux taux calculés
+
+809 pas sûr pour les ...
+
+après éq 3.2 page 27, dérivée complète pour dV/dq non? même chose page 28
+
+542 calcule
+
+545 dérivée totale
+
+546 pourrais-tu dire à quoi phi+ fait référence? Remettre en contexte
+
+équation 550 deuxieme ligne, le dernier d/drho est mal écrit
+
+tu pourrais mettre plus de numéros d'équations, ou au moins plus de références
+dans le corps du texte. Par exemple, la passe à la ligne 563 où tu dis: et donc:
+je trouve ça un peu court. Tu pourrais donner la référence de l'équation du mouvement 
+ou bien le dire dans le texte. Peut-être que tu vas me dire que cet exemple est vraiment trop 
+de base
+
+jpense je l'ai déjà dit, mais de 566 à 569, pas très clair. Faudrait expliquer
+
+Commentaire général: après avoir feuilleté google, je trouve qu'il faudrait dire:
+Modèle de Higgs abélien. C'est la formulation la plus répandue.
+
+683 equations.  Ya plusieurs choses qui gagneraient à être plus claires.
+Je sais pas si c'est commun de multiplier ton équation au complet par dR/Dtau
+mais j'étais un peu mélangé au départ. Faudrait au moins le mentionner en quek part
+ou utiliser une notation plus claire.
+
+Dans les mêmes équations, jme demande s'il y aurait une façon plus élégante de dévelooper
+le dB/dR * dR/dtau * (\dot{R})^2 
+
+686 compliqués: me semble un mot moyen. Je dirais plutôt que la Forme compliquée de B et E ne
+permet pas de résoudre analytiquement S.
+
+
+
+
+
+
+

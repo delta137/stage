@@ -1,0 +1,151 @@
+%%%%%%%%%                 SHOOTING METHOD                 %%%%%%%%%%%%%%%%%
+%%%%%%%%% M�thode Canon + ode45 pour r�soudre le probl�me %%%%%%%%%%%%%%%%%
+%%%%%%%%%        aux valeurs fronti�res bvp.m             %%%%%%%%%%%%%%%%%
+%
+%Cette fonction solutionne un syst�me de 2 �quations diff�rentielles � 
+%conditions fronti�re (bvp.m), y(1)(x) et y(2)(x) avec la m�thode �canon�.
+%
+%La solution num�rique devra respecter les conditions fronti�res suivantes:
+%  y(1)(x_min) = y1_initial    y(1)(x_max) = y1_final 
+%  y(2)(x_min) = y2_initial    y(2)(x_max) = y2_final
+%
+%Le probl�me � 2 �quations diff donne 2 conditions aux fronti�res:
+%  y(2)(x_min) = y2_initial    y(1)(x_max) = y1_final
+%
+%La m�thode canon consiste � transformer le bvp en un probl�me aux valeurs
+%initiales qui va servir de base pour le shooting method:
+%
+%On transforme les condtions fronti�res en condition initiale:
+%  y(1)(x_min) = y1_initial 
+%  y(2)(x_min) = y2_initial 
+%
+%La question est: quel est y1_initial?
+%
+%Il faudra choisir y1_initial, puis int�grer l'�quation diff�rentielle (ici
+%nous prendrons ode45). Si la condition fronti�re y(1)(x_max) = y1_final 
+%n'est pas respect�e, on modifie y1_initial jusqu'� ce qu'elle soit satisfaite.
+
+%--------------------------------------------------------------------------
+%%%Variables � l'entr�e:
+
+  %-> Param�tres sp�cifique aux bvp du probl�me:
+  %   [ ]
+  %-> L'erreur (y1_final_num-y1_final) qui est demand�e: 
+  %   [conv]
+  %-> nombre d'it�rations maximum: 
+  %   [nombrediterations]
+  %-> Le range en x: 
+  %   [x_min   x_max] = Range_x
+  %-> Les conditions fronti�res qui doit �tre respect�e: 
+  %   [y2_initial   y1_final] = Bound_Cond 
+  %-> Le range de y1_initial qui sera test�: 
+  %   [y1_initial_min   y1_initial_max] = Range_y1_initial
+  
+%--------------------------------------------------------------------------
+%%%Variables � la sortie:
+  
+  %-> Est-ce que la m�thode a fonctionn�e? (nombre d'it�rations)
+  %   (en fprintf)
+  %-> La condition initiale manquante: 
+  %   [y1_initial] (en fprintf)
+  %-> L'erreur de y(1) � la fronti�re: 
+  %   [y1_final_num-y1_final] = [err] (en fprintf)
+  %-> La solution num�rique: 
+  %   [x,y]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+function [ x y ] = shooting_method( parametres,conv,nombrediterations,...
+                                             Range_x,Bound_Cond,Range_y1_initial )
+%o�:
+
+x_min = Range_x(1);
+x_max = Range_x(2); 
+
+y2_initial = Bound_Cond(1);
+y1_final = Bound_Cond(2);
+
+y1_initial_min = Range_y1_initial(1);
+y1_initial_max = Range_y1_initial(2);     
+
+for i=1:1:nombrediterations
+    
+%Premi�re int�gration avec ode45:------------------------------------------
+
+options = odeset('RelTol',conv);
+[x,y] = ode45(@(x,y)bvp(x,y,parametres),...
+              [x_min x_max],...
+              [y1_initial_min   y2_initial],...
+              options ) ;
+%o�:
+
+  %-> bvp est le syst�me d'�quations diff�rentielles � r�soudre avec des
+  %   param�tres pr�d�finis.
+  %-> La variable ind�pendante x passe de x_min � x_max
+  %-> y1_initial_min est la valeur initiale de y(1) � x=0
+  %-> y2_initial     est la valeur initiale de y(2) � x=0
+  %-> L'option permet de choisir la tolerance relative voulue, c'est-�-dire
+  %   �conv�, pr�d�finie.
+  
+%Valeur de y(1) � la fronti�re:
+y1_final_num=y(length(x),1); 
+%L'erreur est donc de:
+err1=y1_final_num-y1_final;
+
+if abs(err1)<conv
+   err=err1;
+   y1_initial=y1_initial_min;
+   break 
+end
+
+%Deuxi�re int�gration avec ode45:------------------------------------------
+
+[x,y] = ode45(@(x,y)bvp(x,y,parametres),...
+              [x_min x_max],...
+              [y1_initial_min+(y1_initial_max-y1_initial_min)/2   y2_initial],...
+              options ) ;
+          
+%Valeur de y(1) � la fronti�re:
+y1_final_num=y(length(x),1); 
+%L'erreur est donc de:
+err2=y1_final_num-y1_final;
+
+if abs(err2)<conv
+   err=err2;
+   y1_initial=y1_initial_min+(y1_initial_max-y1_initial_min)/2;
+   break 
+end
+
+%--------------------------------------------------------------------------
+
+%UNDERSHOOT:
+if err1 * err2 > 0
+%Si err1 et err2 SONT du m�me signe (alors leur produit est POSITIF)... 
+%Red�finir y1_initial_min et y1_initial_max:
+y1_initial_min = y1_initial_min +(y1_initial_max - y1_initial_min)/2;
+y1_initial_max = y1_initial_max;
+
+%OVERSHOOT:
+else
+%Si err1 et err2 NE sont PAS du m�me signe (alors leur produit est N�GATIF)...
+%Red�finir y1_initial_min et y1_initial_max:
+y1_initial_min = y1_initial_min;
+y1_initial_max = y1_initial_min +(y1_initial_max - y1_initial_min)/2;
+
+end
+
+
+end %Fin des it�rations.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%La m�thode canon a-t-elle fonctionn�e?
+if i<nombrediterations
+   fprintf('La m�thode canon a fonctionn�e � l''it�ration # %d !!! \n',i)
+   fprintf('La condition initiale manquante trouv�e num�riquement: %d \n',y1_initial)
+   fprintf('L''erreur de y(1) � la fronti�re: %d \n',err)
+else
+   fprintf('La m�thode canon n''a pas fonctionn�e pour ce nombre maximum d''it�ration (%d).\n',i)
+   fprintf('La condition initiale manquante trouv�e num�riquement: %d \n',y1_initial_max)
+end
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%La solution trouv�e est: [x,y];

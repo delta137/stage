@@ -1,0 +1,60 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      1281,         50]
+NotebookOptionsPosition[       977,         34]
+NotebookOutlinePosition[      1315,         49]
+CellTagsIndexPosition[      1272,         46]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<para.txt\>\"", ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2", ",", "3"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.612718404958326*^9, 3.612718442946657*^9}, {
+  3.61271853319347*^9, 3.612718536078303*^9}}],
+
+Cell[BoxData["\<\"para.txt\"\>"], "Output",
+ CellChangeTimes->{{3.612718980893287*^9, 3.612719010270637*^9}}]
+}, Open  ]]
+},
+WindowSize->{740, 598},
+WindowMargins->{{Automatic, 133}, {Automatic, 28}},
+FrontEndVersion->"9.0 for Linux x86 (32-bit) (November 20, 2012)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 270, 6, 32, "Input"],
+Cell[852, 30, 109, 1, 89, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

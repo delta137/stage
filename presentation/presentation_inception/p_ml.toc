@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.24pt}
+\select@language {french}
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{Brisure spontan\~A\IeC {\copyright }e de sym\~A\IeC {\copyright }trie}{16}{0}{2}
+\beamer@sectionintoc {3}{Les d\~A\IeC {\copyright }fauts topologiques}{30}{0}{3}
+\beamer@sectionintoc {4}{Les solitons}{37}{0}{4}
+\beamer@sectionintoc {5}{Le mod\~A\"{}le}{54}{0}{5}
+\beamer@sectionintoc {6}{Conclusion}{73}{0}{6}

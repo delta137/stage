@@ -1,0 +1,196 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      5805,        187]
+NotebookOptionsPosition[      5488,        171]
+NotebookOutlinePosition[      5831,        186]
+CellTagsIndexPosition[      5788,        183]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"L", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"m", "=", "2.5"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"f11", "[", "x_", "]"}], ":=", 
+   RowBox[{"Which", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "L"}], "\[LessEqual]", " ", "x", "\[LessEqual]", " ", 
+      "L"}], ",", 
+     RowBox[{"x", "/", 
+      RowBox[{"(", "L", ")"}]}], ",", 
+     RowBox[{"x", ">", "L"}], ",", "1", ",", 
+     RowBox[{"x", "<", 
+      RowBox[{"-", "L"}]}], ",", 
+     RowBox[{"-", "1"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"f12", "[", 
+    RowBox[{"x_", ",", "H_"}], "]"}], ":=", 
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", "m"}], " ", "L"}], "\[LessEqual]", "x", "\[LessEqual]", 
+      RowBox[{"m", " ", "L"}]}], ",", 
+     RowBox[{
+      RowBox[{"H", 
+       RowBox[{"(", 
+        RowBox[{"2", "-", 
+         RowBox[{"2", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"x", "/", 
+             RowBox[{"(", 
+              RowBox[{"m", " ", "L"}], ")"}]}], ")"}], "^", "2"}]}]}], 
+        ")"}]}], "-", "1"}], ",", 
+     RowBox[{"-", "1"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"gamma", "=", "0.1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Integrate", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"D", "[", 
+         RowBox[{
+          RowBox[{"f11", "[", "x", "]"}], ",", "x"}], "]"}], "^", "2"}], "+", 
+       RowBox[{
+        RowBox[{"D", "[", 
+         RowBox[{
+          RowBox[{"f12", "[", 
+           RowBox[{"x", ",", "H"}], "]"}], ",", "x"}], "]"}], "^", "2"}]}], 
+      ")"}], "/", "2"}], "+", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"f11", "[", "x", "]"}], "^", "2"}], "-", "1"}], ")"}], "^",
+         "2"}], 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"f11", "[", "x", "]"}], "^", "2"}], "-", "delta1"}], 
+        ")"}]}], "+", 
+      RowBox[{"alpha", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"f12", "[", 
+               RowBox[{"x", ",", "H"}], "]"}], "^", "2"}], "-", "1"}], ")"}], 
+           "^", "2"}], "-", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"delta2", "/", "4"}], ")"}], 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"f12", "[", 
+              RowBox[{"x", ",", "H"}], "]"}], "-", "2"}], ")"}], 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"f12", "[", 
+               RowBox[{"x", ",", "H"}], "]"}], "+", "1"}], ")"}], "^", 
+            "2"}]}]}], ")"}], "/", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"f11", "[", "x", "]"}], "^", "2"}], "+", "gamma"}], 
+         ")"}]}]}]}], ")"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "Infinity"}], ",", "Infinity"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.613838181899396*^9, 3.613838204775704*^9}, {
+  3.6138384390961065`*^9, 3.6138385973731594`*^9}, {3.613838663756956*^9, 
+  3.613838740297334*^9}, {3.6138391788254166`*^9, 3.613839180146492*^9}, {
+  3.6138394390783024`*^9, 3.613839508387266*^9}}],
+
+Cell[BoxData[
+ RowBox[{"3.1582833811354185`*^-67", " ", 
+  RowBox[{"(", 
+   RowBox[{"3.648757294118002`*^66", "-", 
+    RowBox[{"3.377362123481126`*^66", " ", "delta1"}], "+", 
+    RowBox[{"6.754724246962255`*^66", " ", 
+     SuperscriptBox["H", "2"]}], "+", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"4.264658826012309`*^68", "+", 
+       RowBox[{"0.`", " ", "\[ImaginaryI]"}]}], ")"}], " ", "alpha", " ", 
+     SuperscriptBox["H", "2"]}], "+", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"7.99623529877308`*^67", "+", 
+       RowBox[{"0.`", " ", "\[ImaginaryI]"}]}], ")"}], " ", "alpha", " ", 
+     "delta2", " ", 
+     SuperscriptBox["H", "2"]}], "-", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"8.091235574505613`*^68", "+", 
+       RowBox[{"0.`", " ", "\[ImaginaryI]"}]}], ")"}], " ", "alpha", " ", 
+     SuperscriptBox["H", "3"]}], "-", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"5.0570222340660084`*^67", "+", 
+       RowBox[{"0.`", " ", "\[ImaginaryI]"}]}], ")"}], " ", "alpha", " ", 
+     "delta2", " ", 
+     SuperscriptBox["H", "3"]}], "+", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"3.8870937121627317`*^68", "+", 
+       RowBox[{"0.`", " ", "\[ImaginaryI]"}]}], ")"}], " ", "alpha", " ", 
+     SuperscriptBox["H", "4"]}]}], ")"}]}]], "Output",
+ CellChangeTimes->{
+  3.6138387458806534`*^9, 3.613838970530503*^9, 3.6138391924251947`*^9, {
+   3.613839499215742*^9, 3.6138395348197784`*^9}, 3.6138395750310783`*^9}]
+}, Open  ]]
+},
+WindowSize->{1664, 915},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"9.0 for Microsoft Windows (64-bit) (January 25, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 3443, 108, 152, "Input"],
+Cell[4025, 132, 1447, 36, 87, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

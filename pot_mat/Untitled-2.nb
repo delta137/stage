@@ -1,0 +1,336 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     11300,        326]
+NotebookOptionsPosition[      9934,        276]
+NotebookOutlinePosition[     10271,        291]
+CellTagsIndexPosition[     10228,        288]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"fname", "=", 
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", "\"\<testfile.txt\>\"", "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"s", "=", 
+  RowBox[{"OpenWrite", "[", "fname", "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"x", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Write", "[", 
+  RowBox[{"s", ",", "\"\<haha\>\""}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Close", "[", "s", "]"}]}], "Input",
+ CellChangeTimes->{{3.612800893787521*^9, 3.612800893914312*^9}, {
+  3.612801009948117*^9, 3.612801010601646*^9}, {3.61280113243146*^9, 
+  3.612801132708072*^9}, {3.612801178176771*^9, 3.612801225125254*^9}, {
+  3.612801317962879*^9, 3.612801341655112*^9}, {3.612801862505557*^9, 
+  3.612801863283818*^9}, {3.612801925669075*^9, 3.612801986616399*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "aofil"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\(\\\"testfile.txt\\\"\\)\[NoBreak] already \
+open as \[NoBreak]\\!\\(\\\"testfile.txt\\\"\\)\[NoBreak]. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/aofil\\\", \
+ButtonNote -> \\\"General::aofil\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.612801868194629*^9, 3.612801988484*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"OpenWrite", "::", "noopen"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Cannot open \[NoBreak]\\!\\(\\\"testfile.txt\\\"\\)\
+\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/noopen\\\", ButtonNote -> \
+\\\"OpenWrite::noopen\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.612801868194629*^9, 3.612801988681887*^9}}],
+
+Cell[BoxData["$Failed"], "Output",
+ CellChangeTimes->{{3.612801134376265*^9, 3.612801151611461*^9}, {
+  3.612801182094719*^9, 3.612801227900081*^9}, {3.612801324447361*^9, 
+  3.612801344462181*^9}, {3.612801868492476*^9, 3.612801988774263*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Write", "::", "strml"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\($Failed\\)\[NoBreak] is not a string, \
+stream, or list of strings and streams. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/strml\\\", ButtonNote -> \
+\\\"Write::strml\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.612801868194629*^9, 3.612801988920171*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Write", "::", "noopen"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Cannot open \[NoBreak]\\!\\($Failed\\)\[NoBreak]. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/noopen\\\", \
+ButtonNote -> \\\"Write::noopen\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.612801868194629*^9, 3.612801989128638*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stream"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\($Failed\\)\[NoBreak] is not a string, \
+InputStream[ ], or OutputStream[ ]. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\
+\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/stream\\\", ButtonNote -> \
+\\\"General::stream\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.612801868194629*^9, 3.6128019892782*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Close", "[", "$Failed", "]"}]], "Output",
+ CellChangeTimes->{{3.612801134376265*^9, 3.612801151611461*^9}, {
+  3.612801182094719*^9, 3.612801227900081*^9}, {3.612801324447361*^9, 
+  3.612801344462181*^9}, {3.612801868492476*^9, 3.612801989364017*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.612800911183462*^9, 3.612800965042951*^9}, {
+  3.612801056497865*^9, 3.612801131162251*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Write", "::", "strml"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\($Failed\\)\[NoBreak] is not a string, \
+stream, or list of strings and streams. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/strml\\\", ButtonNote -> \
+\\\"Write::strml\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.612801059635527*^9, 3.612801104243528*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Write", "::", "noopen"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Cannot open \[NoBreak]\\!\\($Failed\\)\[NoBreak]. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/noopen\\\", \
+ButtonNote -> \\\"Write::noopen\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.612801059635527*^9, 3.612801104382485*^9}}]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{"Put", "[", "\"\<testy.csv\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PutAppend", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2", ",", "3"}], "}"}], ",", "\"\<testy.csv\>\""}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.612802842297864*^9, 3.61280294844843*^9}, {
+  3.61280301353307*^9, 3.612803035470889*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"mydata1", "=", 
+    RowBox[{"TableForm", "[", 
+     RowBox[{"Flatten", "[", 
+      RowBox[{
+       RowBox[{"Table", "[", 
+        RowBox[{
+         RowBox[{"Table", "[", 
+          RowBox[{
+           RowBox[{"Table", "[", 
+            RowBox[{
+             RowBox[{"Table", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"xcord", ",", "ycord", ",", "zcord", ",", "tcord"}], 
+                "}"}], ",", 
+               RowBox[{"{", 
+                RowBox[{"xcord", ",", "0", ",", "50", ",", "10"}], "}"}]}], 
+              "]"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"ycord", ",", "0", ",", "50", ",", "10"}], "}"}]}], 
+            "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"zcord", ",", "50", ",", "100", ",", "10"}], "}"}]}], 
+          "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"tcord", ",", "50", ",", "10", ",", "10"}], "}"}]}], "]"}], 
+       ",", "4"}], "]"}], "]"}]}], ";"}], "\n"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<file12.dat\>\"", ",", "mydata1", ",", "\"\<CSV\>\""}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.612803430001417*^9, 3.612803430303335*^9}, {
+  3.61280371309471*^9, 3.612803754740237*^9}, {3.612803856740485*^9, 
+  3.612803909037327*^9}, {3.612803964781514*^9, 3.612803978435588*^9}}],
+
+Cell[BoxData["\<\"file12.dat\"\>"], "Output",
+ CellChangeTimes->{
+  3.612803433292538*^9, {3.612803748080573*^9, 3.612803756798139*^9}, {
+   3.612803872593588*^9, 3.612803881240184*^9}, {3.612803944093179*^9, 
+   3.612803978893434*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["mydata1"], "Input",
+ CellChangeTimes->{{3.612803951663585*^9, 3.61280395350461*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"{", "}"}],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{{3.612803953907193*^9, 3.612803983914721*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"s", "=", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "2", ",", "3"}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.61280378783166*^9, 3.612803791038472*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", "2", ",", "3"}], "}"}]], "Output",
+ CellChangeTimes->{3.612803803279587*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"$stream", "=", 
+   RowBox[{"OpenWrite", "[", 
+    RowBox[{"\"\<file0.dat\>\"", ",", 
+     RowBox[{"BinaryFormat", "\[Rule]", "True"}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{"Export", "[", 
+  RowBox[{"$stream", ",", "s", ",", "\"\<CSV\>\""}], "]"}], "\n", 
+ RowBox[{"WriteString", "[", 
+  RowBox[{"$stream", ",", "\"\<\\n\>\""}], "]"}], "\n", 
+ RowBox[{"Close", "[", "$stream", "]"}]}], "Input",
+ CellChangeTimes->{{3.612803473924423*^9, 3.612803512744959*^9}, {
+  3.612803793715928*^9, 3.612803809462077*^9}}],
+
+Cell[BoxData[
+ RowBox[{"OutputStream", "[", 
+  RowBox[{"\<\"file0.dat\"\>", ",", "466"}], "]"}]], "Output",
+ CellChangeTimes->{
+  3.612803475903474*^9, {3.612803800176124*^9, 3.612803813598104*^9}}],
+
+Cell[BoxData["\<\"file0.dat\"\>"], "Output",
+ CellChangeTimes->{
+  3.612803475903474*^9, {3.612803800176124*^9, 3.612803813601153*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"$stream", "=", 
+   RowBox[{"OpenAppend", "[", 
+    RowBox[{"\"\<yaya.dat\>\"", ",", 
+     RowBox[{"BinaryFormat", "\[Rule]", "True"}]}], "]"}]}], ";"}], "\n", 
+ RowBox[{"Export", "[", 
+  RowBox[{"$stream", ",", "mydata1", ",", "\"\<CSV\>\""}], "]"}], "\n", 
+ RowBox[{"WriteString", "[", 
+  RowBox[{"$stream", ",", "\"\<\\n\>\""}], "]"}], "\n", 
+ RowBox[{"Close", "[", "$stream", "]"}]}], "Input",
+ CellChangeTimes->{{3.612803535315919*^9, 3.612803571645532*^9}}],
+
+Cell[BoxData[
+ RowBox[{"OutputStream", "[", 
+  RowBox[{"\<\"yaya.dat\"\>", ",", "457"}], "]"}]], "Output",
+ CellChangeTimes->{{3.612803543726853*^9, 3.612803561278902*^9}}],
+
+Cell[BoxData["\<\"yaya.dat\"\>"], "Output",
+ CellChangeTimes->{{3.612803543726853*^9, 3.612803561281555*^9}}]
+}, Open  ]]
+},
+WindowSize->{740, 598},
+WindowMargins->{{Automatic, 52}, {Automatic, 60}},
+FrontEndVersion->"9.0 for Linux x86 (32-bit) (November 20, 2012)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 823, 17, 121, "Input"],
+Cell[1405, 41, 522, 10, 24, "Message"],
+Cell[1930, 53, 478, 10, 24, "Message"],
+Cell[2411, 65, 244, 3, 32, "Output"],
+Cell[2658, 70, 498, 10, 24, "Message"],
+Cell[3159, 82, 455, 9, 24, "Message"],
+Cell[3617, 93, 499, 10, 24, "Message"],
+Cell[4119, 105, 275, 4, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4431, 114, 141, 2, 32, "Input"],
+Cell[4575, 118, 498, 10, 24, "Message"],
+Cell[5076, 130, 455, 9, 24, "Message"]
+}, Open  ]],
+Cell[5546, 142, 351, 8, 55, "Input"],
+Cell[CellGroupData[{
+Cell[5922, 154, 1371, 35, 209, "Input"],
+Cell[7296, 191, 236, 4, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7569, 200, 98, 1, 32, "Input"],
+Cell[7670, 203, 173, 5, 81, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7880, 213, 171, 4, 32, "Input"],
+Cell[8054, 219, 125, 3, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8216, 227, 541, 12, 99, "Input"],
+Cell[8760, 241, 198, 4, 32, "Output"],
+Cell[8961, 247, 135, 2, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9133, 254, 498, 11, 99, "Input"],
+Cell[9634, 267, 172, 3, 32, "Output"],
+Cell[9809, 272, 109, 1, 32, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
